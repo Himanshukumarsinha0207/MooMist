@@ -1,0 +1,160 @@
+*{
+    font-family:"poppins",sans-serif;
+}
+.services{
+    background: linear-gradient(to left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url("../../Images/services-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    margin-top: 80px;
+}
+
+.services .main-services{
+    width: 80%;
+    margin: auto;
+}
+
+.services .services-topic{
+    width: 100%;
+    text-align: center;
+}
+
+.services .services-topic h2{
+    font-size:40px;
+    font-family: sans-serif;
+    color:white;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.services .services-topic p{
+    color: #fff;
+    font-size: 18px;
+}
+
+.services-related{
+    display: grid;
+    justify-items: center;
+    padding: 40px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 0;
+    grid-gap: 20px;
+}
+
+.services-related .services-col{
+    display: block;
+    width: 350px;
+    height: 280px;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid  white;
+    text-align: center;
+    align-items: center;
+    transition:0.5s ease-in-out;
+    border-radius: 10px;
+
+    position:relative;
+}
+.services-related .services-col:hover{
+    background-color:rgba(255, 255, 255, 0.342);
+    height:320px;
+    color:black;
+    cursor: pointer;
+
+}
+.services-related .services-col:hover h4{
+    color:black;
+
+}
+.services-related .services-col:hover p{
+    color:black;
+
+}
+.services-related .services-col .servbtn{
+    background-color:black;
+    color:white;
+    text-decoration:none;
+    border:1px solid black;
+    border-radius: 10px;
+    padding:10px;
+    font-size:18px;
+    position:relative;
+    bottom:25px;
+    visibility: hidden;
+  
+}
+.services-related .services-col:hover .servbtn{
+    visibility: visible;
+opacity: 1;
+
+}
+
+
+
+.services-related .services-col img{
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.services-related .services-col h4{
+    color: #fff;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 5px 5px;
+}
+
+.services-related .services-col p{
+    color:white;
+    font-size: 14px;
+    margin:30px;
+   position:relative;
+   bottom:25px;
+}
+
+@media(max-width:1220px){
+    .services{
+        height: auto;
+    }
+
+    .services-related{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .services-related .services-col{
+        width: 100%;
+        height: 320px;
+    }
+}
+
+@media(max-width:550px){
+    .services-related{
+        grid-template-columns: 1fr;
+    }
+
+    .services .services-topic h2{
+        font-size: 32px;
+    }
+    .services-related .services-col:hover{
+        height:350px;
+    }
+
+}
+
+@media(max-width:330px){
+    .services .services-topic h2{
+        font-size: 26px;
+    }
+
+    .services-related .services-col img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .services-related .services-col h4{
+        font-size: 20px;
+    }
+}
